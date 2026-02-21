@@ -22,3 +22,5 @@ In this example, the flow goes like this:
 One important note: in real NASL plugins, you generally won’t see the plugin reaching out to some external version repository or public “latest version” page at runtime. That’s not because Nessus is shy, it’s because **on-prem deployments (like Tenable Security Center)** often live in networks where outbound traffic is treated like contraband. Firewalls, proxies, egress filtering, and general corporate paranoia can all prevent those requests from ever leaving the building.
 
 So instead, that “latest version” knowledge is typically **hard-coded into the plugin**, keeping the detection reliable even when the scanner is operating in a network that believes the internet is a myth.
+
+[Project Source Code](https://github.com/k1ngst0n911/Shell-Circuit)
