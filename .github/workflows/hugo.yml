@@ -32,16 +32,15 @@ jobs:
           hugo-version: "0.163.3"
           extended: true
 
-      - name: Setup Node
-        uses: actions/setup-node@v4
-        with:
-          node-version: "22"
-
       - name: Install Dart Sass
-        run: npm install -g sass
-
-      - name: Verify Dart Sass
-        run: sass --version
+        run: |
+          curl -L -o dart-sass.tar.gz https://github.com/sass/dart-sass/releases/download/1.89.2/dart-sass-1.89.2-linux-x64.tar.gz
+          tar -xzf dart-sass.tar.gz
+          sudo mv dart-sass /usr/local/dart-sass
+          sudo ln -sf /usr/local/dart-sass/sass /usr/local/bin/sass
+          sudo chmod 755 /usr/local/dart-sass/sass
+          sass --version
+          sass --embedded --version
 
       - name: Setup Pages
         uses: actions/configure-pages@v5
