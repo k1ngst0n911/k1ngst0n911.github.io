@@ -11,3 +11,14 @@ hostname = "gh0stc3ll"
         name = "Kingston Damour"
         email = "kingston@punchmeintheface.com"
 
+[[params.social]]
+key = 0
+name = "github"
+url = "https://github.com/k1ngst0n911"
+icon = "fa-brands fa-github"  # Add link to your icon font to `layouts/partials/custom-head.html`
+target = "_blank"
+
+[[params.social]]
+key = 1
+name = "twitter"
+url = "https://x.com/KingstonDamour"
