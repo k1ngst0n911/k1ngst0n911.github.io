@@ -4,12 +4,10 @@ title = "k1ngst0n911"
 theme="hugo-theme-nightfall"
 
 [params]
-user = "user_kingston"
-hostname = "hostname"
+user = "k1ngst0n"
+hostname = "gh0stc3ll"
 
     [params.author]
-        name = "Name_Mr Kingston"
-        avatar = "/avatar.png"
-        avatarSize = "size-m"
-        email = "kingston@gmail.com"
-        avatarFirst = false
+        name = "Kingston Damour"
+        email = "kingston@punchmeintheface.com"
+
