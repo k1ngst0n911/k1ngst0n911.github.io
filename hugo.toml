@@ -11,7 +11,7 @@ theme = "hugo-theme-nightfall"
 
   [[menu.header]]
     name = "about"
-    weight = 1
+    weight = 0
     url = "/about"
 
 [params]
