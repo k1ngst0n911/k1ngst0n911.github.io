@@ -45,19 +45,5 @@
 				<guid>http://localhost:1313/tags/tenable/</guid>
 				<description></description>
 			</item>
-			<item>
-				<title>Posting</title>
-				<link>http://localhost:1313/tags/posting/</link>
-				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>kingston@punchmeintheface.com (Kingston Damour)</author>
-				<guid>http://localhost:1313/tags/posting/</guid>
-				<description></description>
-			</item>
-			<item>
-				<title>Shit</title>
-				<link>http://localhost:1313/tags/shit/</link>
-				<pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>kingston@punchmeintheface.com (Kingston Damour)</author>
-				<guid>http://localhost:1313/tags/shit/</guid>
-				<description></description>
-			</item>
 	</channel>
 </rss>

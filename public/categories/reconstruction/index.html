@@ -90,7 +90,7 @@
         </a>
 
         <div class="postExcerpt">
-          <h2 id="-nessus-style-logic-without-the-scanner-">[ Nessus-style logic without the scanner ]</h2>
+          <hr>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>·-·-·-·-·-·-·-·-·-·-·-·-·-·-·-·-·-·-·-·-·-·-·-·-·-·-·-·-·-·-·-·-·-·
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>          ██████   ██       ██   ██   █████   ███████  ██   ██
@@ -110,20 +110,8 @@
 </span></span><span style="display:flex;"><span>  ·-·-·-·-·-·-·-·-·-·-·-·-·-·-·-·-·-·-·-·-·-·-·-·-·-·-·-·-·-·-·-·-·-·
 </span></span><span style="display:flex;"><span>                    fetch . parse . compare . haunt
 </span></span><span style="display:flex;"><span>                --- greetz: no scanners were harmed ---
-</span></span><span style="display:flex;"><span>  ·-·-·-·-·-·-·-·-·-·-·-·-·-·-·-·-·-·-·-·-·-·-·-·-·-·-·-·-·-·-·-·-·-·```
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>Tenable Nessus has been the defacto standard when it comes to scanning an organization&#39;s infrastructure for vulnerabilities. 
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>This script reconstructs the core version-based detection logic commonly used in Nessus plugins: request an endpoint, parse a version string, compare it to a known fixed version, and report if it’s vulnerable. Nessus plugins typically add additional fingerprinting and edge-case handling.
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>Four moves, no feed:
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>- Query a target endpoint (`/Version`)
-</span></span><span style="display:flex;"><span>- Extract an installed build version
-</span></span><span style="display:flex;"><span>- Compare it to a **Stable baseline** (NASL: embedded baseline like a real plugin feed)
-</span></span><span style="display:flex;"><span>- In PowerShell, optionally scrape the vendor page to discover the current **Stable** version dynamically
-</span></span><span style="display:flex;"><span>- Report if the installed build is older than Stable
-</span></span></code></pre></div>
+</span></span><span style="display:flex;"><span>  ·-·-·-·-·-·-·-·-·-·-·-·-·-·-·-·-·-·-·-·-·-·-·-·-·-·-·-·-·-·-·-·-·-·
+</span></span></code></pre></div><p>Tenable Nessus has been the de facto standard when it comes to scanning an organization&rsquo;s infrastructure for vulnerabilities. I wanted to show that it was possible to reproduce the behavior of a Nessus plugin via PowerShell.</p>
         </div>
       </div>
     
