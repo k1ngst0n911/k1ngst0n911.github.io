@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <title>
+Plugin Phantom | Kingston Damour
+</title>
+
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Kingston Damour&#39;s Basement">
+
+<meta name="generator" content="Hugo 0.163.3">
+
+
+<link rel="canonical" href="http://localhost:1313/posts/plugin-phantom/" >
+
+
+
+
+<link href="/css/style.min.66302fa6c122ab7804faa4bd6465554ac4d746c25294af622826d0445b79ab94.css" rel="stylesheet">
+
+
+
+
+</head>
+
+<body>
+
+    <div class="flexWrapper">
+        <header class="headerWrapper">
+    <div class="header">
+        <div>
+            <a class="terminal" href="/">
+                <span>k1ngst0n@gh0stc3ll ~ $</span>
+            </a>
+        </div>
+        <input class="side-menu" type="checkbox" id="side-menu">
+        <label class="hamb" for="side-menu"><span class="hamb-line"></span></label>
+        <nav class="headerLinks">
+            <ul>
+                
+                <li>
+                    <a href="http://localhost:1313/about" title="" >
+                        ~/about</a>
+                </li>
+                
+                <li>
+                    <a href="http://localhost:1313/posts" title="" >
+                        ~/posts</a>
+                </li>
+                
+            </ul>
+        </nav>
+    </div>
+</header>
+
+
+        <div class="content">
+            <main class="main">
+                
+<div class="postWrapper">
+    <h1>Plugin Phantom</h1>
+    
+
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+
+    
+    
+    
+    
+
+    
+    
+    
+    
+
+    
+    <div>
+        <hr>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>·-·-·-·-·-·-·-·-·-·-·-·-·-·-·-·-·-·-·-·-·-·-·-·-·-·-·-·-·-·-·-·-·-·
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>          ██████   ██       ██   ██   █████   ███████  ██   ██
+</span></span><span style="display:flex;"><span>          ██   ██  ██       ██   ██  ██          ██    ███  ██
+</span></span><span style="display:flex;"><span>          ██████   ██       ██   ██  ██  ███     ██    ██ █ ██
+</span></span><span style="display:flex;"><span>          ██       ██       ██   ██  ██   ██     ██    ██  ███
+</span></span><span style="display:flex;"><span>          ██       ███████   █████    █████   ███████  ██   ██
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>     ██████   ██   ██    ███    ██   ██  ███████   █████   ██   ██
+</span></span><span style="display:flex;"><span>     ██   ██  ██   ██   ██ ██   ███  ██     ██    ██   ██  ███ ███
+</span></span><span style="display:flex;"><span>     ██████   ███████  ██   ██  ██ █ ██     ██    ██   ██  ██ █ ██
+</span></span><span style="display:flex;"><span>     ██       ██   ██  ███████  ██  ███     ██    ██   ██  ██   ██
+</span></span><span style="display:flex;"><span>     ██       ██   ██  ██   ██  ██   ██     ██     █████   ██   ██
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>                 nessus-style logic without the scanner
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  ·-·-·-·-·-·-·-·-·-·-·-·-·-·-·-·-·-·-·-·-·-·-·-·-·-·-·-·-·-·-·-·-·-·
+</span></span><span style="display:flex;"><span>                    fetch . parse . compare . haunt
+</span></span><span style="display:flex;"><span>                --- greetz: no scanners were harmed ---
+</span></span><span style="display:flex;"><span>  ·-·-·-·-·-·-·-·-·-·-·-·-·-·-·-·-·-·-·-·-·-·-·-·-·-·-·-·-·-·-·-·-·-·
+</span></span></code></pre></div><p>Tenable Nessus has been the de facto standard when it comes to scanning an organization&rsquo;s infrastructure for vulnerabilities. I wanted to show that it was possible to reproduce the behavior of a Nessus plugin via PowerShell.</p>
+<p>Nessus plugins are merely the detection logic that allows the scanner to find things. The engine manages hosts, ports, timing, and a shared knowledge base. The plugins are where the intelligence lives. Although the setup seems daunting and complicated, the idea is rather simple. Write enough code to determine if it is susceptible to a specific vulnerability based upon observable behavior.</p>
+<p>The bulk of the plugin feed is detection without exploitation (ACT_GATHER_INFO): version checks, banner grabbing, registry and file checks on authenticated scans, config audits. They observe state and infer vulnerability based upon said state.</p>
+<p>The categories themselves tell you if exploitation is a part of the model:</p>
+<ul>
+<li>
+<p>ACT_GATHER_INFO - Version / Banner / Config inference. No interaction beyond normal protocol use.</p>
+</li>
+<li>
+<p>ACT_ATTACK - more aggressive interaction. such as brute forcing. authentication bypass checks.</p>
+</li>
+<li>
+<p>ACT_DESTRUCTIVE_ATTACK - plugins that may crash or cause harm. disabled by default.</p>
+</li>
+</ul>
+<p>These plugins are written using NASL (Nessus Attack Scripting Language) that most closely resembles the C programming language.</p>
+<p>Some of these plugins are free to inspect with *.nasl (location here) and others are .nbin compiled and encrypted?</p>
+<p>If you are deployed via Linux, the plugins will drop here: /opt/nessus/lib/nessus/plugins/</p>
+<p>The ones with the .nasl extension are source viewable while the .nbin ones are not (compiled). The .inc are include/library files for general use of a functionality.</p>
+<p>I wanted to show the possibility of using PowerShell to reconstruct the behavior seen from a Tenable Nessus Plugin.</p>
+<p>
+<a href="https://github.com/k1ngst0n911/Shell-Circuit" target="_blank" rel="noopener">Source Code on GitHub</a>
+</p>
+
+    </div>
+</div>
+
+            </main>
+        </div>
+
+
+        <footer class="footer">
+    
+        <span>
+            © 2026 Kingston Damour, Built with
+            <a href="https://gohugo.io" class="footerLink">Hugo</a> and
+            <a href="https://github.com/LordMathis/hugo-theme-nightfall" class="footerLink">Nightfall</a> theme
+        </span>
+    
+</footer>
+    </div>
+
+</body>
+
+</html>

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 	<channel>
-		<title>k1ngst0n911</title>
-		<link>http://localhost:1313/</link>
-		<description>Recent content on k1ngst0n911</description>
+		<title>Posts on k1ngst0n911</title>
+		<link>http://localhost:1313/posts/</link>
+		<description>Recent content in Posts on k1ngst0n911</description>
 		<generator>Hugo</generator>
 		<language>en-us</language>
 		
@@ -16,20 +16,13 @@
 		
 			<lastBuildDate>Mon, 29 Jun 2026 19:03:39 -0400</lastBuildDate>
 		
-			<atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+			<atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
 			<item>
 				<title>Plugin Phantom</title>
 				<link>http://localhost:1313/posts/plugin-phantom/</link>
 				<pubDate>Mon, 29 Jun 2026 19:03:39 -0400</pubDate><author>kingston@punchmeintheface.com (Kingston Damour)</author>
 				<guid>http://localhost:1313/posts/plugin-phantom/</guid>
 				<description>&lt;hr&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;·-·-·-·-·-·-·-·-·-·-·-·-·-·-·-·-·-·-·-·-·-·-·-·-·-·-·-·-·-·-·-·-·-·&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;          ██████   ██       ██   ██   █████   ███████  ██   ██&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;          ██   ██  ██       ██   ██  ██          ██    ███  ██&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;          ██████   ██       ██   ██  ██  ███     ██    ██ █ ██&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;          ██       ██       ██   ██  ██   ██     ██    ██  ███&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;          ██       ███████   █████    █████   ███████  ██   ██&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;     ██████   ██   ██    ███    ██   ██  ███████   █████   ██   ██&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;     ██   ██  ██   ██   ██ ██   ███  ██     ██    ██   ██  ███ ███&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;     ██████   ███████  ██   ██  ██ █ ██     ██    ██   ██  ██ █ ██&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;     ██       ██   ██  ███████  ██  ███     ██    ██   ██  ██   ██&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;     ██       ██   ██  ██   ██  ██   ██     ██     █████   ██   ██&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                 nessus-style logic without the scanner&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  ·-·-·-·-·-·-·-·-·-·-·-·-·-·-·-·-·-·-·-·-·-·-·-·-·-·-·-·-·-·-·-·-·-·&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                    fetch . parse . compare . haunt&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                --- greetz: no scanners were harmed ---&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  ·-·-·-·-·-·-·-·-·-·-·-·-·-·-·-·-·-·-·-·-·-·-·-·-·-·-·-·-·-·-·-·-·-·&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Tenable Nessus has been the de facto standard when it comes to scanning an organization&amp;rsquo;s infrastructure for vulnerabilities. I wanted to show that it was possible to reproduce the behavior of a Nessus plugin via PowerShell.&lt;/p&gt;</description>
-			</item>
-			<item>
-				<title>About Moi</title>
-				<link>http://localhost:1313/about/</link>
-				<pubDate>Wed, 24 Jun 2026 18:09:00 -0400</pubDate><author>kingston@punchmeintheface.com (Kingston Damour)</author>
-				<guid>http://localhost:1313/about/</guid>
-				<description>&lt;p&gt;An adventurer, an explorer of the world of bits.&lt;/p&gt;</description>
 			</item>
 	</channel>
 </rss>

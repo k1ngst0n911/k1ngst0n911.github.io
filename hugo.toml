@@ -1,11 +1,26 @@
 baseURL = "https://k1ngst0n911.github.io/"
 locale = "en-us"
 title = "k1ngst0n911"
-theme="hugo-theme-nightfall"
+theme = "hugo-theme-nightfall"
+
+[menu]
+  [[menu.header]]
+    name = "posts"
+    weight = 0
+    url = "/posts"
+
+  [[menu.header]]
+    name = "about"
+    weight = 0
+    url = "/about"
 
 [params]
 user = "k1ngst0n"
 hostname = "gh0stc3ll"
+sitedescription = "Kingston Damour's Basement"
+showMetadata = false
+showReadingTime = false
+openLinksInNewTab = true
 
     [params.author]
         name = "Kingston Damour"
@@ -22,3 +37,5 @@ aria = "GitHub Profile"
 key = 1
 name = "x.com"
 url = "https://x.com/KingstonDamour"
+target = "_blank"
+aria = "X.com Profile"
